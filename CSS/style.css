@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F1F1F3;
+}
+body header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3b4248;
+}
+header .logo{
+    width: 30%;
+    margin-right: 15em;
+}
+.logo a{
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 0.7em;
+    text-decoration: none;
+}
+nav ul{
+    position: relative;
+    list-style: none;
+}
+nav ul ul{
+    position: absolute;
+}
+nav .menu{
+    display: inline-flex;
+}
+nav .menu > li{
+    padding: 0 1em;
+}
+.menu li a{
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+}
+.menu .subMenu{
+    display: none;
+} 
+.menu li:hover ul{
+    display: block;
+    padding-top: 1em;
+    margin-left: 0.7em;
+    transition-delay: .9s;
+    background-color: #3b4248;
+}
+.subMenu li:hover{
+    transition: all .5s ease;
+    background-color: #4c545b;
+}
+.menu .subMenu{
+    width: 30%;
+    text-align: center;
+}
+.subMenu li a{
+    font-size: 1.1rem;
+    line-height: 2em;
+}
+main .firstContainer{
+    margin-top: 5em;
+}
+.firstContainer .firstContent{
+    display: flex;
+}
+.boximg{
+    width: 39%;
+}
+.boximg img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.firstContainer .firstContent{
+    justify-content: center;
+}
+.firstContent .descriptionServices{
+    width: 39%;
+    margin: 0 2%;
+}
+.descriptionServices .labor{
+    display: flex;
+    margin: 1em 0;
+    background-color: #fff;
+}
+.descriptionServices p:nth-child(1){
+    font-size: 1.3rem;
+    color: #1B2A41;
+    padding-bottom: 0.3em;
+}
+.descriptionServices h1{
+    font-size: 2rem;
+    color: #1B2A41;
+    padding-bottom: 0.5em;
+}
+.descriptionServices p:nth-child(3){
+    font-size: 1.1rem;
+    color: #675986;
+    padding-bottom: 2.5em;
+}
+.laborImg, .laborText{
+    margin: 0 0.5em;
+}
+.laborText strong{
+    font-size: 1.3rem;
+    color: #333;
+}
+.laborText p{
+    color: #808080;
+}
+.laborText span{
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #cc2936;
+}
+.laborText span:hover{
+    color: #333;
+    cursor: pointer;
+    background-color: #fff;
+}
+.descriptionServices .moveButton{
+    margin-top: 2em;
+}
+.moveButton a{
+    padding: 1em 2em;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 40px;
+    background-color: #cc2936;
+}
+.moveButton a:hover{
+    border: none;
+    cursor: pointer;
+    border:  2px solid #cc2936;
+    color: #cc2936;
+    background-color: #fff;
+}
+main .secondContainer{
+    margin-top: 5em;
+    height: 43.75em;
+    padding-top: 4em;
+    background-color: #495867;
+    clip-path: polygon(0 0, 6% 0, 15% 0%, 58% 4%, 74% 6%, 99% 1%, 100% 100%, 94% 100%, 85% 100%, 30% 95%, 14% 95%, 0 100%);
+}
+.secondContainer h1{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 0.4em;
+}
+.secondContainer p{
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 0.4em;
+}
+.secondContainer .secondContent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.secondContent .descriptionContato{
+    width: 23%;
+    margin-top: 2em;
+}
+.descriptionContato .contato{
+    width: 100%;
+    height: 6em;
+    border-radius: 10px;
+    background-color: #DBDEE1;
+}
+.contato ion-icon{
+    font-size: 2rem;
+    padding-top: 0.6em;
+    margin-left: 1em;
+}
+.contato strong{
+    margin-left: 4em;
+}
+.secondContent .maps{
+    width: 60%;
+    margin-top: 2em;
+}
+.maps img{
+    width: 100%;
+}
+.maps .editMapButton{
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: center;
+}
+.editMapButton a{
+    padding: 0.7em 4em;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    background-color: #cc2936;
+}
+.editMapButton ion-icon{
+    font-size: 1.6rem;
+}
+.thirdContainer .searchBlog{
+    width: 60%;
+    display: block;
+    margin: 2em auto;
+    align-items: center;
+    text-align: center;
+}
+.searchBlog h1{
+    font-size: 2rem;
+    color: #3b4248;
+}
+.searchBlog p{
+    color: #4F4F4F;
+    padding-bottom: 1em;
+}
+.searchBlog input[type=search]{
+    width: 80%;
+    height: 2.6em;
+    outline: none;
+    border-radius: 10px;
+    border-color: #808080;
+}
+.searchBlog ion-icon{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0.2em 1em;
+    position: relative;
+    right: 3.1em;
+    top: 0.5em;
+    border-radius: 5px;
+    background-color: #cc2936;
+}
+.thirdContainer .thirdContent{
+    display: flex;
+    justify-content: center;
+}
+.thirdContent .imgText{
+    width: 28%;
+    margin: 0 0.6em;
+    text-align: center;
+    background-color: #fff;
+}
+.imgText img{
+    width: 95%;
+    padding-top: 0.7em;
+}
+.imgText h3{
+    color: #333;
+    padding-top: 1em;
+}
+.imgText p{
+    color: #808080;
+    padding-top: 0.5em;
+}
+.imgText .learnMore{
+    padding-top: 1em;
+}
+.learnMore a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0.4em 0.9em;
+    border-radius: 7px;
+    background-color: #cc2936;
+}
+footer .contentFooter{
+    height: 12em;
+    background-color: #3b4248;
+}
+.contentFooter .textFooter{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2em;
+    text-align: center;
+    color: #fff;
+}
+@media screen and (max-width: 767px){
+    header nav{
+        display: none;
+    }
+    .firstContainer .firstContent{
+        display: block;
+        margin: 0 auto;
+    }
+    .firstContent .boximg{
+        width: 80%;
+        display: block;
+        margin: 0 2.3em;
+    }
+    .firstContent .descriptionServices{
+        width: 90%;
+    }
+    main .secondContainer{
+        height: 50em;
+        clip-path: none;
+    }
+    .secondContainer .secondContent{
+        display: block;
+    }
+    .secondContent .descriptionContato{
+        width: 90%;
+        margin: 0 2%;
+    }
+    .descriptionContato .contato{
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+    .secondContent .maps{
+        width: 90%;
+        margin: 1em 5%;
+    }
+    .searchBlog ion-icon{ 
+        position: relative;
+        left: 2.5em;
+        top: -1.5em;
+    }
+    footer .contentFooter{
+        height: 13em;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1180px){
+    main .secondContainer{
+        clip-path: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
